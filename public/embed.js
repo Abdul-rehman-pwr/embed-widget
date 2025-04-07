@@ -1,26 +1,25 @@
-(function () {
-  // React اور ReactDOM کو لوڈ کرنے کے لیے اسکرپٹ
+(function() {
   const script = document.createElement('script');
-  script.src = 'https://unpkg.com/react@17/umd/react.production.min.js'; // React کے CDN لنک
-  script.onload = function () {
+  script.src = 'https://unpkg.com/react@17/umd/react.production.min.js'; // React کا سی ڈی این لنک
+  script.onload = function() {
     const script2 = document.createElement('script');
-    script2.src = 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js'; // ReactDOM کے CDN لنک
-    script2.onload = function () {
-      // آپ کی ویجیٹ کی فائل کا لنک یہاں ڈالیں
+    script2.src = 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js'; // ReactDOM کا سی ڈی این لنک
+    script2.onload = function() {
       const widgetScript = document.createElement('script');
-      widgetScript.src = 'https://embed-widget-bphfdglkz-abdul-rehmans-projects-cfaad9ee.vercel.app/static/js/main.chunk.js'; // Vercel URL سے فائل لوڈ کریں
-      widgetScript.onload = function () {
-        // آپ کا ویجیٹ یہاں رینڈر ہوگا
+      widgetScript.src = 'https://your-cdn-link/widget-bundle.js'; // آپ کے ویجیٹ کا سی ڈی این لنک
+      widgetScript.onload = function() {
+        // React اپلیکیشن کے لیے div بنائیں
         const widgetElement = document.createElement('div');
-        widgetElement.id = 'react-widget';  // یہ div آپ کے ویجیٹ کو ہولڈ کرے گا
-        document.body.appendChild(widgetElement);  // اس div کو body میں شامل کر دیں
-
-        // React کو رینڈر کرنے کا عمل
-        ReactDOM.createRoot(widgetElement).render(React.createElement(Widget));
+        widgetElement.id = 'react-widget';  // اس div کا id 'react-widget' ہوگا
+        document.body.appendChild(widgetElement);  // اس div کو body میں شامل کریں
+        
+        // React 18 میں 'createRoot' کا استعمال کریں
+        const root = ReactDOM.createRoot(widgetElement);
+        root.render(React.createElement(Widget));  // یہاں 'Widget' وہ React کمپوننٹ ہے جو آپ رینڈر کرنا چاہتے ہیں
       };
-      document.head.appendChild(widgetScript);
+      document.head.appendChild(widgetScript);  // ویجیٹ اسکرپٹ کو head میں شامل کریں
     };
-    document.head.appendChild(script2);
+    document.head.appendChild(script2);  // ReactDOM اسکرپٹ کو head میں شامل کریں
   };
-  document.head.appendChild(script);
+  document.head.appendChild(script);  // React اسکرپٹ کو head میں شامل کریں
 })();
