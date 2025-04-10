@@ -21,12 +21,12 @@ const Widget = () => {
 
       {/* Bank Details */}
       <div style={styles.bankDetails}>
-        <p style={{ ...styles.bankLine, marginBottom: '8px' }}>Account Holder: WE AID gGmbH</p>
-        <p style={{ ...styles.bankLine, marginBottom: '8px' }}>IBAN: DE52370205000001838801</p>
-        <p style={{ ...styles.bankLine, marginBottom: '8px' }}>SWIFT/BIC: BFSWDE33XXX</p>
-        <p style={{ ...styles.bankLine, marginBottom: '8px' }}>Use Keyword: WE AID</p>
-        <p style={{ ...styles.bankLine, marginBottom: '12px' }}>Bank Details:</p>
-        <p style={{ ...styles.bankLine, marginBottom: '8px' }}>Bank für Sozialwirtschaft Aktiengesellschaft,</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Account Holder: WE AID gGmbH</p>
+        <p style={{ ...styles.bankLine, marginBottom: '12px' }}>IBAN: DE52370205000001838801</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>SWIFT/BIC: BFSWDE33XXX</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Use Keyword: WE AID</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank Details:</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank für Sozialwirtschaft Aktiengesellschaft,</p>
         <p style={styles.bankLine}>Konrad-Adenauer-Ufer 85, 50668 Köln, Germany</p>
         <p style={styles.bankLine}>Phone +49 (0) 221 97356-0</p>
       </div>
