@@ -48,8 +48,7 @@ const styles = {
     textAlign: 'center',
     backgroundColor: '#ffffff',
     boxSizing: 'border-box',
-    height: '100vh',
-    overflowY: 'auto',
+    height: '130vh',
   },
   paragraph: {
     color: 'rgb(117 117 117 / 1)',
