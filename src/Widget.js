@@ -4,22 +4,19 @@ import React from 'react';
 const Widget = () => {
   return (
     <div style={styles.widgetContainer}>
-      {/* First Paragraph */}
+      
       <p style={styles.paragraph}>
         WE AID is a non-profit organisation and rely on donations and your support. No overhead, 100% impact: Initiative´s donations will not be used for WE AID as organisation, admin or project infrastructure as long as it is not directly earmarked by donors.
       </p>
 
-      {/* Thank You Message */}
       <p style={styles.thankYou}>
         Thanks for helping us building a sustainable platform by donating directly for WE AID.
       </p>
 
-      {/* Donate by Wire Transfer */}
       <p style={styles.donateTitle}>
         Donate by Wire Transfer
       </p>
 
-      {/* Bank Details */}
       <div style={styles.bankDetails}>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Account Holder: WE AID gGmbH</p>
         <p style={{ ...styles.bankLine, marginBottom: '12px' }}>IBAN: DE52370205000001838801</p>
