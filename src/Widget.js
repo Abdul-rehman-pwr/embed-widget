@@ -66,6 +66,11 @@ const styles = {
   },
   bankDetails: {
     marginTop: '15px',
+    display:'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
   },
   bankLine: {
     color: 'rgb(117 117 117 / 1)',
