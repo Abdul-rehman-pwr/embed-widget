@@ -4,29 +4,22 @@ import { useLocation } from 'react-router-dom';
 
 const Widget = () => {
   const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
 
-  // Convert all query params to key-value pairs
-  const allParams = Array.from(queryParams.entries());
+  // Helper to parse query params
+  const getQueryParams = () => {
+    const params = new URLSearchParams(location.search);
+    return params.get('message') || ''; // Replace 'message' with your desired param name
+  };
+
+  const queryValue = getQueryParams();
 
   return (
     <div style={styles.widgetContainer}>
-      <h2 style={styles.heading}>Received Parameters:</h2>
-      
-      {allParams.length > 0 ? (
-        <ul style={styles.paramList}>
-          {allParams.map(([key, value]) => (
-            <li key={key} style={styles.paramItem}>
-              <strong>{key}:</strong> {value}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p style={styles.noParams}>No query parameters provided.</p>
-      )}
+      {/* This h1 will show the query param value */}
+      <h1 style={styles.heading}>{queryValue}</h1>
 
       <p style={styles.paragraph}>
-        WE AID is a non-profit organisation and rely on donations and your support...
+        WE AID is a non-profit organisation and rely on donations and your support. No overhead, 100% impact: Initiative´s donations will not be used for WE AID as organisation, admin or project infrastructure as long as it is not directly earmarked by donors.
       </p>
 
       <p style={styles.thankYou}>
@@ -40,6 +33,7 @@ const Widget = () => {
         <p style={{ ...styles.bankLine, marginBottom: '12px' }}>IBAN: DE52370205000001838801</p>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>SWIFT/BIC: BFSWDE33XXX</p>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Use Keyword: WE AID</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank Details:</p>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank für Sozialwirtschaft Aktiengesellschaft, Konrad-Adenauer-Ufer 85, 50668 Köln, Germany</p>
         <p style={styles.bankLine}>Phone +49 (0) 221 97356-0</p>
       </div>
@@ -65,24 +59,9 @@ const styles = {
     overflow: 'hidden',
   },
   heading: {
-    fontSize: '22px',
+    fontSize: '24px',
     fontWeight: 600,
     color: '#000',
-    marginBottom: '10px',
-  },
-  paramList: {
-    listStyleType: 'none',
-    padding: 0,
-    marginBottom: '20px',
-  },
-  paramItem: {
-    fontSize: '16px',
-    color: '#333',
-    marginBottom: '6px',
-  },
-  noParams: {
-    fontSize: '14px',
-    color: '#888',
     marginBottom: '20px',
   },
   paragraph: {
