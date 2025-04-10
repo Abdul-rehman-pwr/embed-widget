@@ -49,7 +49,7 @@ const styles = {
     backgroundColor: '#ffffff',
     boxSizing: 'border-box',
     height: '100vh',
-    overflow: 'hidden',
+    overflowY: 'auto',
   },
   paragraph: {
     color: 'rgb(117 117 117 / 1)',
