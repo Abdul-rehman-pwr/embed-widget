@@ -55,7 +55,7 @@ const styles = {
     color: 'rgb(117 117 117 / 1)',
     lineHeight: '16px',
     fontWeight: 300,
-    fontSize: '14px',
+    fontSize: '18px',
   },
   thankYou: {
     color: 'rgb(0 145 217 / 1)',
@@ -68,7 +68,7 @@ const styles = {
     color: 'rgb(0 0 0 / 1)',
     lineHeight: '25px',
     fontWeight: 500,
-    fontSize: '19px',
+    fontSize: '24px',
     marginTop: '15px',
   },
   bankDetails: {
@@ -78,7 +78,7 @@ const styles = {
     color: 'rgb(117 117 117 / 1)',
     lineHeight: '24px',
     fontWeight: 300,
-    fontSize: '14px',
+    fontSize: '18px',
     marginTop: '8px',
   },
 };
