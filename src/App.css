@@ -6,6 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+/* src/index.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow: hidden;
+  height: 100%;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

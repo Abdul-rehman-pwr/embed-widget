@@ -37,16 +37,19 @@ const Widget = () => {
 const styles = {
   widgetContainer: {
     padding: '20px',
-    border: '1px solid #ccc',
     width: '100%',
     maxWidth: '700px',
     borderRadius: '8px',
     fontFamily: 'Arial, sans-serif',
-    display:'flex',
+    display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
+    backgroundColor: '#ffffff',
+    boxSizing: 'border-box',
+    height: '100vh',
+    overflow: 'hidden',
   },
   paragraph: {
     color: 'rgb(117 117 117 / 1)',
