@@ -39,6 +39,7 @@ const styles = {
     padding: '20px',
     border: '1px solid #ccc',
     width: '100%',
+    height: '100vh',
     maxWidth: '700px',
     borderRadius: '8px',
     fontFamily: 'Arial, sans-serif',
