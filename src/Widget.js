@@ -38,7 +38,7 @@ const styles = {
   widgetContainer: {
     padding: '20px',
     width: '100%',
-    maxWidth: '900px',
+    maxWidth: '700px',
     borderRadius: '8px',
     fontFamily: 'Arial, sans-serif',
     display: 'flex',
@@ -48,13 +48,14 @@ const styles = {
     textAlign: 'center',
     backgroundColor: '#ffffff',
     boxSizing: 'border-box',
-    height: '130vh',
+    height: '100vh',
+    overflow: 'hidden',
   },
   paragraph: {
     color: 'rgb(117 117 117 / 1)',
     lineHeight: '16px',
     fontWeight: 300,
-    fontSize: '18px',
+    fontSize: '14px',
   },
   thankYou: {
     color: 'rgb(0 145 217 / 1)',
@@ -67,7 +68,7 @@ const styles = {
     color: 'rgb(0 0 0 / 1)',
     lineHeight: '25px',
     fontWeight: 500,
-    fontSize: '24px',
+    fontSize: '19px',
     marginTop: '15px',
   },
   bankDetails: {
@@ -77,7 +78,7 @@ const styles = {
     color: 'rgb(117 117 117 / 1)',
     lineHeight: '24px',
     fontWeight: 300,
-    fontSize: '18px',
+    fontSize: '14px',
     marginTop: '8px',
   },
 };
