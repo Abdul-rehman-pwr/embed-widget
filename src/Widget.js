@@ -39,10 +39,13 @@ const styles = {
     padding: '20px',
     border: '1px solid #ccc',
     width: '100%',
-    maxWidth: '600px',
     borderRadius: '8px',
-    backgroundColor: '#f9f9f9',
     fontFamily: 'Arial, sans-serif',
+    display:'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
   },
   paragraph: {
     color: 'rgb(117 117 117 / 1)',
@@ -66,11 +69,6 @@ const styles = {
   },
   bankDetails: {
     marginTop: '15px',
-    display:'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
   },
   bankLine: {
     color: 'rgb(117 117 117 / 1)',
