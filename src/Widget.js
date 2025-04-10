@@ -23,8 +23,7 @@ const Widget = () => {
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>SWIFT/BIC: BFSWDE33XXX</p>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Use Keyword: WE AID</p>
         <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank Details:</p>
-        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank für Sozialwirtschaft Aktiengesellschaft,</p>
-        <p style={styles.bankLine}>Konrad-Adenauer-Ufer 85, 50668 Köln, Germany</p>
+        <p style={{ ...styles.bankLine, marginBottom: '6px' }}>Bank für Sozialwirtschaft Aktiengesellschaft,Konrad-Adenauer-Ufer 85, 50668 Köln, Germany</p>
         <p style={styles.bankLine}>Phone +49 (0) 221 97356-0</p>
       </div>
     </div>
