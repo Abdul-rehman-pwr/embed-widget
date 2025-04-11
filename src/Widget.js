@@ -2,15 +2,20 @@
 import React from 'react';
 
 const Widget = () => {
+  const searchParams = new URLSearchParams(window.location.search);
+  const name = searchParams.get('name') || 'Donor';
+  const amount = searchParams.get('amount');
+
   return (
+
+
     <div style={styles.widgetContainer}>
       
       <p style={styles.paragraph}>
         WE AID is a non-profit organisation and rely on donations and your support. No overhead, 100% impact: Initiative´s donations will not be used for WE AID as organisation, admin or project infrastructure as long as it is not directly earmarked by donors.
       </p>
-
-      <p style={styles.thankYou}>
-        Thanks for helping us building a sustainable platform by donating directly for WE AID.
+  <p style={styles.thankYou}>
+        Thanks {name}{amount ? ` for donating €${amount}` : ''} to WE AID!
       </p>
 
       <p style={styles.donateTitle}>
